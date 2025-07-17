@@ -18,7 +18,7 @@ public class ATMApp {
             }
             Reader reader = new InputStreamReader(inputStream);
             UserAccount user = gson.fromJson(reader, UserAccount.class);
-            reader.close();
+            //reader.close();
 
             ATM atm = new ATM(user);
             atm.start();
